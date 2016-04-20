@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        body{
+            /*设置字体大小*/
+            font-size: 30px;
+            /*设置文字颜色*/
+            color: red;
+            /*字体加粗*/
+            font-weight: bolder;
+        }
+
+        div{
+            /*复合属性,可用于设置颜色和图片*/
+            background: url("img/7.jpg");
+            /*设置背景的尺寸, cover跟随标签的尺寸显示*/
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+
+            /*水平居中,取值:left right center*/
+            text-align: center;
+            /*都是隐藏内容,区别:
+            1.display会连同尺寸一起隐藏
+            2.visibility不会隐藏尺寸
+            */
+            display: none;
+            visibility: hidden;
+            /*设置光标的显示类型: crosshair pointer*/
+            cursor: pointer;
+        }
+
+        span{
+            /*背景颜色*/
+            background-color: blue;
+            /*宽度*/
+            width: 300px;
+            /*高度*/
+            height: 200px;
+            /*行高,用于垂直居中*/
+            line-height: 300px;
+
+        }
+
+        a{
+            /*设置去除下划线,用于a标签*/
+            text-decoration: none;
+        }
+
+        .one{
+            /*设置缩进: % */
+            text-indent: 3%;
+        }
+
+        ul{
+            /*设置列表的类型: none  square*/
+            list-style:square;
+        }
+
+        #main{
+            /*设置背景颜色*/
+            background-color: red;
+            /*设置宽度*/
+            width: 90px;
+            /*设置高度*/
+            height: 120px;
+            /* 超出标签的内容处理:hidden, auto */
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <!--<div>111111</div>-->
+    <!--<span>2222222</span>-->
+    <!--<p>33333333333</p>-->
+
+    <div>
+        <span>12112323322332</span>
+    </div>
+    <p class="one">21323243423434efwqewqfewqfewqfewq</p>
+    <p>21323243423434fewqfewqfew</p>
+    <p>21323243423434fewfew</p>
+    <p>fewfewfewfewefw</p>
+
+    <a href="#">百度一下</a>
+
+    <ul>
+        <li>111111</li>
+        <li>111111</li>
+        <li>111111</li>
+        <li>111111</li>
+    </ul>
+
+    <div id="main">44444444444444444444</div>
+</body>
+</html>

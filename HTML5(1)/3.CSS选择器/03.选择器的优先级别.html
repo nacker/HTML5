@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!--
+ css选择器遵循:
+ 1.在相同级别:1.叠加原则  2.就近原则
+ 2. id选择器> 类选择器 > 标签选择器
+ 3. 范围越小,优先级别越高
+-->
+    <style>
+
+        div#main{  /*101*/
+            color: goldenrod;
+        }
+
+        /*id选择器*/
+        #main{  /*100*/
+            color: deeppink;
+        }
+
+        /*类选择器*/
+        .test2{   /*10*/
+            color: purple;
+        }
+
+        .test1{   /*10*/
+            color: yellow;
+        }
+
+        /*标签选择器*/
+        div{   /*1*/
+            color: red;
+        }
+        div{  /*1*/
+            color: green;
+        }
+        div{   /*1*/
+            color: blue;
+            font-size: 100px;
+        }
+
+        *{  /*1000*/
+            color: darkgreen  !important;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main" class="test1 test2" style="color: red">111111</div>
+</body>
+</html>
